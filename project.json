@@ -1,0 +1,30 @@
+{
+  "name": "app-helix-ide",
+  "projectType": "application",
+  "root": "apps/helix-ide",
+  "sourceRoot": "apps/helix-ide/src",
+  "tags": [
+    "type:app",
+    "tier:1"
+  ],
+  "targets": {
+    "build": {
+      "executor": "@nx/ts:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/helix-ide",
+        "tsConfig": "apps/helix-ide/tsconfig.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/helix-ide/**/*.ts"
+        ]
+      }
+    }
+  }
+}

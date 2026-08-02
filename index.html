@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helix IDE | Aether Tech AI</title>
+    <meta
+      name="description"
+      content="Helix IDE — AI-powered development environment with Orion, Vega, and Atlas integration. Code, debug, and deploy with autonomous agents."
+    />
+    <meta property="og:title" content="Helix IDE | Aether Tech AI" />
+    <meta
+      property="og:description"
+      content="AI-powered development environment with Orion, Vega, and Atlas integration."
+    />
+    <meta property="og:url" content="https://helix.nebulahq.work" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://helix.nebulahq.work" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --aether-gold: #d6a94e;
+        --aether-orange: #ff6a1a;
+        --aether-obsidian: #050505;
+        --warm-white: #f5f5f5;
+        --font-heading: 'Rajdhani', sans-serif;
+        --font-body: 'Inter', sans-serif;
+        --font-mono: 'Fira Code', monospace;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      #root {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        font-family: var(--font-body);
+        background: var(--aether-obsidian);
+        color: var(--warm-white);
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
